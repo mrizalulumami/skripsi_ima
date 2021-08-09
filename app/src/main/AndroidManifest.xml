@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.project.penyewaanalatpesta">
+
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/logo_app_ic"
+		android:label="@string/app_name"
+		android:roundIcon="@drawable/logo_app_ic"
+		android:supportsRtl="true"
+		android:theme="@style/Theme.PenyewaanAlatPesta">
+		<activity android:name=".Pesanan_Sewa_Activity"></activity>
+		<activity android:name=".Keranjang_Activity" />
+		<activity android:name=".Detail_barang_Activity" />
+		<activity android:name=".Profil_User" />
+		<activity android:name=".Home_Activity" />
+		<activity android:name=".Register_Activity" />
+		<activity android:name=".Login_Activity" />
+		<activity android:name=".MainActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+	</application>
+
+</manifest>
