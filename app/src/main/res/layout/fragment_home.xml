@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".fragments.HomeFragment">
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="180dp">
+
+				<com.synnapps.carouselview.CarouselView
+					android:id="@+id/carouselView"
+					android:layout_width="match_parent"
+					android:background="#CDEBF8"
+					android:layout_height="160dp"/>
+
+				<com.google.android.material.card.MaterialCardView
+					android:layout_centerHorizontal="true"
+					android:layout_alignParentBottom="true"
+					android:layout_width="match_parent"
+					android:layout_marginRight="30dp"
+					android:layout_marginLeft="30dp"
+					app:cardCornerRadius="10dp"
+					app:strokeColor="#5B6FDD"
+					app:strokeWidth="1dp"
+					android:padding="10dp"
+					android:layout_height="50dp">
+					<TextView
+						android:id="@+id/namauser"
+						android:gravity="center_horizontal"
+						android:layout_gravity="center_vertical"
+						android:textSize="15sp"
+						android:textStyle="bold"
+						android:textColor="#050000"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"/>
+				</com.google.android.material.card.MaterialCardView>
+
+				<com.google.android.material.card.MaterialCardView
+					android:layout_alignParentBottom="true"
+					android:layout_centerHorizontal="true"
+					android:layout_marginBottom="35dp"
+					android:layout_width="wrap_content"
+					android:layout_marginRight="30dp"
+					android:layout_marginLeft="30dp"
+					app:cardCornerRadius="30dp"
+					app:strokeColor="#5B6FDD"
+					app:strokeWidth="1dp"
+					android:padding="10dp"
+					android:layout_height="wrap_content">
+					<de.hdodenhof.circleimageview.CircleImageView
+						android:id="@+id/imageuser"
+						android:src="@drawable/settings_ic"
+						android:layout_width="100dp"
+						android:layout_height="100dp"/>
+				</com.google.android.material.card.MaterialCardView>
+
+
+			</RelativeLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				<androidx.appcompat.widget.SearchView
+					android:layout_margin="10dp"
+					android:id="@+id/searchView"
+					app:iconifiedByDefault="false"
+					android:background="@drawable/shape_search"
+					app:queryHint="Cari disini"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"  />
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/rv_home"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+
+			</LinearLayout>
+		</LinearLayout>
+	</androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

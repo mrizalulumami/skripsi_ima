@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".Login_Activity">
+	<ImageView
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="30dp"
+		android:layout_alignParentTop="true"
+		android:src="@drawable/logo_app_ic"
+		android:layout_width="200dp"
+		android:layout_height="200dp"/>
+
+	<LinearLayout
+		android:layout_marginTop="250dp"
+		android:layout_marginRight="30dp"
+		android:layout_marginLeft="30dp"
+		android:layout_alignParentTop="true"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<EditText
+			android:id="@+id/email_login"
+			android:hint="masukkan gmail"
+			android:padding="10dp"
+			android:background="@color/purple_200"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		<EditText
+			android:id="@+id/password_login"
+			android:layout_marginTop="10dp"
+			android:hint="masukkan password"
+			android:padding="10dp"
+			android:background="@color/purple_200"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		<TextView
+			android:id="@+id/lupa_password"
+			android:gravity="center"
+			android:layout_marginTop="20dp"
+			android:text="Lupa Password"
+			android:layout_marginLeft="70dp"
+			android:layout_marginRight="70dp"
+			android:layout_width="match_parent"
+			android:layout_marginBottom="10dp"
+			android:layout_height="wrap_content"/>
+
+		<androidx.appcompat.widget.AppCompatButton
+			android:id="@+id/btn_login"
+			android:layout_marginLeft="70dp"
+			android:layout_marginRight="70dp"
+			android:text="Login"
+			android:background="@color/purple_500"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		<TextView
+			android:layout_marginTop="50dp"
+			android:id="@+id/buataccount"
+			android:gravity="center"
+			android:textStyle="bold"
+			android:textColor="#673AB7"
+			android:textSize="15dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Buat Account"/>
+	</LinearLayout>
+
+
+
+</RelativeLayout>

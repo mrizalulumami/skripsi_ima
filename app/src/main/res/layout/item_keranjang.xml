@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<com.google.android.material.card.MaterialCardView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp"
+		app:cardCornerRadius="10dp"
+		app:cardElevation="3dp"
+		app:strokeColor="@color/design_default_color_primary"
+		app:strokeWidth="2dp">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#77ED79"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<com.google.android.material.card.MaterialCardView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="5dp"
+					app:cardCornerRadius="10dp"
+					app:cardElevation="3dp"
+					app:strokeColor="@color/design_default_color_primary"
+					app:strokeWidth="2dp">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:padding="10dp">
+
+						<ImageView
+							android:id="@+id/gambarpesanank"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:scaleType="fitXY"
+							android:adjustViewBounds="true"
+							tools:ignore="ContentDescription"/>
+
+					</LinearLayout>
+
+
+				</com.google.android.material.card.MaterialCardView>
+
+				<com.google.android.material.card.MaterialCardView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="5dp"
+					app:cardCornerRadius="10dp"
+					app:cardElevation="3dp"
+					app:strokeColor="@color/design_default_color_primary"
+					app:strokeWidth="2dp">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<TextView
+							android:id="@+id/nambar_pesanank"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginBottom="8dp"
+							android:gravity="center"
+							android:text="Nama Barang"
+							android:textAllCaps="true"
+							android:textColor="@color/design_default_color_primary"
+							android:textSize="19sp"
+							android:textStyle="bold" />
+						<TextView
+							android:id="@+id/keybarangsview"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginBottom="8dp"
+							android:gravity="center"
+							android:text="Nama Barang"
+							android:textAllCaps="true"
+							android:textColor="@color/design_default_color_primary"
+							android:textSize="19sp"
+							android:textStyle="bold" />
+						<TextView
+							android:id="@+id/statuspesanank"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginBottom="8dp"
+							android:gravity="center"
+							android:text="proses"
+							android:textAllCaps="true"
+							android:textColor="@color/teal_200"
+							android:textSize="12sp"
+							android:textStyle="bold" />
+
+						<LinearLayout
+							android:gravity="center"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal">
+
+							<LinearLayout
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:padding="10dp">
+
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="horizontal">
+
+									<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="Total Harga : "
+										android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+										android:textColor="@color/black" />
+
+									<TextView
+										android:id="@+id/totalhargapesanank"
+										android:text="100"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:textColor="@color/black" />
+									<TextView
+										android:layout_marginLeft="2dp"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text=",Total Strok : "
+										android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+										android:textColor="@color/black" />
+
+									<TextView
+										android:id="@+id/totstokker"
+										android:text="100"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:textColor="@color/black" />/>
+								</LinearLayout>
+
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="horizontal">
+
+									<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="Penyewa : "
+										android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+										android:textColor="@color/black" />
+
+									<TextView
+										android:id="@+id/namapenyewak"
+										android:text="Muslimatussakdiah"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:textColor="@color/black" />
+
+								</LinearLayout>
+
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="horizontal">
+
+									<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="Alamat Penyewa : "
+										android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+										android:textColor="@color/black" />
+
+									<TextView
+										android:id="@+id/alamatPenyewak"
+										android:text="Mayung"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:textColor="@color/black" />
+
+								</LinearLayout>
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="horizontal">
+
+									<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="No Hp Penyewa : "
+										android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+										android:textColor="@color/black" />
+
+									<TextView
+										android:id="@+id/nohpenyewak"
+										android:text="081918284509"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:textColor="@color/black" />
+
+								</LinearLayout>
+
+							</LinearLayout>
+
+							<LinearLayout
+								android:layout_marginLeft="10dp"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:gravity="center"
+								android:orientation="vertical">
+
+								<Button
+									android:id="@+id/pesank"
+									android:text="proses"
+									android:textAllCaps="false"
+									android:layout_width="70dp"
+									android:layout_height="wrap_content"/>
+								<ImageView
+									android:id="@+id/batalkanpesanank"
+									android:layout_width="50dp"
+									android:layout_height="50dp"
+									android:src="@drawable/delete_ic" />
+
+							</LinearLayout>
+						</LinearLayout>
+					</LinearLayout>
+
+				</com.google.android.material.card.MaterialCardView>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+	</com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".Profil_User"
+	android:background="@color/teal_200">
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:focusable="false"
+		android:focusableInTouchMode="true"
+		android:layout_marginBottom="50dp">
+
+		<androidx.cardview.widget.CardView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="136dp"
+			android:paddingBottom="10dp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginBottom="40dp"
+			app:cardElevation="6dp"
+			app:cardCornerRadius="30dp">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="20sp">
+
+				<com.google.android.material.textfield.TextInputLayout
+					android:id="@+id/pNama"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					app:errorEnabled="true"
+					app:counterEnabled="true"
+					app:counterMaxLength="50"
+					style="@style/TextInputLayoutStyle"
+					android:layout_marginTop="80dp">
+					<com.google.android.material.textfield.TextInputEditText
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="Nama"
+						android:background="@color/white"
+						android:inputType="text"
+						android:id="@+id/txtNama"
+						style="@style/TextInputLayoutStyle"/>
+				</com.google.android.material.textfield.TextInputLayout>
+
+				<com.google.android.material.textfield.TextInputLayout
+					android:id="@+id/pAlamat"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					app:errorEnabled="true"
+					app:counterEnabled="true"
+					app:counterMaxLength="50"
+					style="@style/TextInputLayoutStyle">
+					<com.google.android.material.textfield.TextInputEditText
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="Alamat"
+						android:background="@color/white"
+						android:inputType="text"
+						android:id="@+id/txtAlamat"
+						style="@style/TextInputLayoutStyle"/>
+				</com.google.android.material.textfield.TextInputLayout>
+
+				<com.google.android.material.textfield.TextInputLayout
+					android:id="@+id/pNo"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					app:errorEnabled="true"
+					app:counterEnabled="true"
+					app:counterMaxLength="50"
+					style="@style/TextInputLayoutStyle"
+					android:layout_marginTop="16dp">
+					<com.google.android.material.textfield.TextInputEditText
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="email."
+						android:inputType="phone"
+						android:background="@color/white"
+						android:id="@+id/txtemail"
+						style="@style/TextInputLayoutStyle"/>
+				</com.google.android.material.textfield.TextInputLayout>
+				<Button
+					android:id="@+id/pSimpan"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="112dp"
+					android:text="Simpan"
+					android:layout_gravity="center_horizontal"
+					android:background="@drawable/tombol_login"
+					android:textColor="@color/white" />
+			</LinearLayout>
+		</androidx.cardview.widget.CardView>
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.498"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			android:layout_marginTop="52dp"
+			android:background="@drawable/edit_text_login"
+			android:elevation="9dp"
+			tools:targetApi="lollipop">
+			<de.hdodenhof.circleimageview.CircleImageView
+				android:id="@+id/pFoto"
+				android:layout_width="150dp"
+				android:layout_height="150dp"
+				android:scaleType="centerCrop"
+				android:layout_margin="10dp"
+				android:src="@drawable/settings_ic"/>
+		</RelativeLayout>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+	<!--    <ImageView-->
+	<!--        android:visibility="invisible"-->
+	<!--        android:id="@+id/kembali"-->
+	<!--        android:layout_width="wrap_content"-->
+	<!--        android:layout_height="wrap_content"-->
+	<!--        android:layout_marginStart="16dp"-->
+	<!--        android:layout_marginLeft="16dp"-->
+	<!--        android:layout_marginTop="12dp"-->
+	<!--        android:src="@drawable/ic_kembali"-->
+	<!--        app:layout_constraintStart_toStartOf="parent"-->
+	<!--        app:layout_constraintTop_toTopOf="parent" />-->
+</androidx.core.widget.NestedScrollView>

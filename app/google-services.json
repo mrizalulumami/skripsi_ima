@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1064990676810",
+    "firebase_url": "https://penyewaan-alat-pesta-default-rtdb.firebaseio.com",
+    "project_id": "penyewaan-alat-pesta",
+    "storage_bucket": "penyewaan-alat-pesta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064990676810:android:420452a31b62df0bfb13b3",
+        "android_client_info": {
+          "package_name": "com.project.erental"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064990676810-grp02l888liqtk8eokpeeg0v592fe0si.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDliosiYozbn_8WItUBbHCJU1Meafp00GU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064990676810-grp02l888liqtk8eokpeeg0v592fe0si.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064990676810:android:3844541c6e285713fb13b3",
+        "android_client_info": {
+          "package_name": "com.project.penyewaanalatpesta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064990676810-grp02l888liqtk8eokpeeg0v592fe0si.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDliosiYozbn_8WItUBbHCJU1Meafp00GU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064990676810-grp02l888liqtk8eokpeeg0v592fe0si.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
